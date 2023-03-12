@@ -10,7 +10,6 @@ RUN pnpm install --frozen-lockfile
 
 COPY --chown=node:node ./server/ .
 
-RUN ls -la .
 ENV NODE_ENV production
 RUN pnpm run build
 
